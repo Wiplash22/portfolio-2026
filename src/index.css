@@ -278,13 +278,25 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+    /* Reduce side padding to give more room for grid */
+  }
+
+  /* Reduce grid gap on mobile */
+  .grid,
+  .hexagon-grid {
+    gap: 1rem !important;
+  }
+
+  /* Hero adjustments */
   #hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 
   /* Ensure no overflow */
@@ -294,18 +306,43 @@ h3 {
     width: 100%;
   }
 
-  /* Even smaller for phones */
+  /* Fix cards on very small screens */
+  .skill-card,
+  .project-card,
+  .contact-card {
+    width: 100% !important;
+    padding: 1rem !important;
+    /* Compact padding */
+    margin: 0 auto 1rem auto;
+  }
+
+  /* Force override padding from inline styles */
+  .contact-card {
+    padding: 1.5rem 1rem !important;
+  }
+
+  /* Reduce Skill Icon Size */
   .skill-card .icon-wrapper {
     width: 40px !important;
     height: 40px !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .skill-card .icon-wrapper span {
+    font-size: 1.2rem !important;
   }
 
   .skill-card h3 {
     font-size: 0.9rem !important;
   }
 
+  .skill-card p {
+    font-size: 0.75rem !important;
+  }
+
+  /* Reduce heading size further */
   .section-heading {
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 1.5rem !important;
   }
 }
