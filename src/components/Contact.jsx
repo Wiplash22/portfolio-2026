@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section id="contact" className="section" style={styles.section}>
             <div className="container" style={styles.container}>
-                <div style={styles.card}>
+                <div style={styles.card} className="contact-card">
                     <h2 style={styles.heading}>GET IN <span style={{ color: 'var(--secondary-color)' }}>TOUCH</span></h2>
                     <p style={styles.subtitle}>
                         Ready to start a project?

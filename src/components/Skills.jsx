@@ -19,7 +19,7 @@ const Skills = () => {
                 <div style={styles.grid}>
                     {skillsData.map((skill, index) => (
                         <div key={index} style={styles.card} className="skill-card">
-                            <div style={styles.iconWrapper(skill.color)}>
+                            <div style={styles.iconWrapper(skill.color)} className="icon-wrapper">
                                 <span style={styles.icon}>{skill.icon}</span>
                             </div>
                             <h3 style={styles.name}>{skill.name}</h3>

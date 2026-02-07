@@ -271,7 +271,24 @@ h3 {
     margin: 0 auto 1rem auto;
   }
 
-  #contact .card {
+  /* Force override padding from inline styles */
+  .contact-card {
     padding: 2rem 1rem !important;
+  }
+
+  /* Reduce Skill Icon Size */
+  .skill-card .icon-wrapper {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .skill-card span {
+    font-size: 1.4rem !important;
+  }
+
+  /* Reduce heading size further */
+  .section-heading {
+    font-size: 1.7rem !important;
+    margin-bottom: 2rem !important;
   }
 }

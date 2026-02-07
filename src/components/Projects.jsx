@@ -35,7 +35,7 @@ const Projects = () => {
                 <h2 className="section-heading">LATEST <span style={{ color: 'var(--accent-color)' }}>PROJECTS</span></h2>
                 <div style={styles.grid}>
                     {projectsData.map((project, index) => (
-                        <div key={index} style={styles.card} onClick={() => window.open(project.link, '_blank')}>
+                        <div key={index} style={styles.card} className="project-card" onClick={() => window.open(project.link, '_blank')}>
                             <div style={styles.content}>
                                 <h3 style={styles.title}>{project.title}</h3>
                                 <p style={styles.description}>{project.description}</p>
