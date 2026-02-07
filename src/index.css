@@ -372,17 +372,16 @@ h3 {
 }
 
 /* --- MOBILE SPECIFIC LAYOUT (Separate Style for Phones) --- */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+  /* WIDENED BREAKPOINT FROM 480px to 640px */
 
   /* 1. SECTIONS & CONTAINERS */
   .section {
     padding: 3rem 0 !important;
-    /* Half the desktop padding */
   }
 
   .container {
     padding: 0 0.5rem !important;
-    /* Minimal side padding to maximize width */
   }
 
   /* 2. TYPOGRAPHY SCALING */
@@ -400,9 +399,7 @@ h3 {
   .skills-grid {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    /* Force 2 columns */
     gap: 0.5rem !important;
-    /* Very tight gap */
   }
 
   .projects-grid {
@@ -416,13 +413,11 @@ h3 {
   }
 
   /* 4. CARDS & ELEMENTS */
-  /* Common Card Styles for Mobile */
   .skill-card,
   .project-card,
   .contact-card,
   #contact .card {
     padding: 0.75rem !important;
-    /* Super compact padding */
     border-radius: 12px !important;
   }
 
@@ -433,15 +428,14 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: auto !important;
-    /* Remove fixed height */
+    min-height: 0 !important;
+    /* FORCE RESET MIN-HEIGHT */
+    height: auto !important;
     padding: 0.8rem 0.5rem !important;
     aspect-ratio: auto !important;
     background: rgba(255, 255, 255, 0.03) !important;
-    /* Flat background */
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
     transform: none !important;
-    /* Disable animations */
     transition: none !important;
     box-shadow: none !important;
   }
@@ -457,7 +451,6 @@ h3 {
     margin-bottom: 0.3rem !important;
     border-width: 1px !important;
     box-shadow: none !important;
-    /* Remove glow for performance/clean layout */
   }
 
   .skill-card .icon-wrapper span {
@@ -469,10 +462,15 @@ h3 {
     margin-bottom: 0.1rem !important;
   }
 
-  /* HIDE PROGRESS BAR to save space */
+  /* FORCE HIDE PROGRESS BAR */
   .skill-card .bar-container {
-    height: 4px !important;
-    margin-bottom: 0.2rem !important;
+    display: none !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: none !important;
   }
 
   /* Projects Specifics */
