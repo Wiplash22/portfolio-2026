@@ -1,0 +1,171 @@
+:root {
+  /* Neon & Dark Theme Palette */
+  --background-color: #050505;
+  /* Pitch black for contrast */
+  --surface-color: #121212;
+  /* Dark gray for cards */
+  --text-primary: #ededed;
+  /* Off-white */
+  --text-secondary: #a1a1aa;
+  /* Light gray */
+
+  /* Neon Colors */
+  --primary-color: #00f3ff;
+  /* Cyan Neon */
+  --secondary-color: #bc13fe;
+  /* Purple Neon */
+  --accent-color: #0aff00;
+  /* Lime Neon */
+
+  /* Glow Effects */
+  --glow-primary: 0 0 10px rgba(0, 243, 255, 0.7), 0 0 20px rgba(0, 243, 255, 0.5);
+  --glow-secondary: 0 0 10px rgba(188, 19, 254, 0.7), 0 0 20px rgba(188, 19, 254, 0.5);
+  --glow-accent: 0 0 10px rgba(10, 255, 0, 0.7), 0 0 20px rgba(10, 255, 0, 0.5);
+
+  --border-color: #333;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+
+  /* Spacing & Radius */
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Account for sticky header */
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  line-height: var(--line-height-base);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  /* Slightly squarer for tech look */
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px var(--primary-color);
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  color: #000;
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.btn-secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  box-shadow: 0 0 20px var(--secondary-color), 0 0 40px var(--secondary-color);
+}
+
+/* Skill Card Hover */
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card:hover h3 {
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
