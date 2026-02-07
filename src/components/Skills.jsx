@@ -2,7 +2,7 @@ import React from 'react';
 
 const skillsData = [
     { name: 'Python', level: 'Advanced', color: '#3776AB', icon: '🐍' },
-    { name: 'Django', level: 'Advanced', color: '#092e20', icon: '⛓️' },
+    { name: 'Django', level: 'Advanced', color: '#44B78B', icon: '⛓️' },
     { name: 'Backend', level: 'Advanced', color: '#0aff00', icon: '⚙️' },
     { name: 'SQL', level: 'Advanced', color: '#4479A1', icon: '🗄️' },
     { name: 'Machine Learning', level: 'Intermediate', color: '#FF6F00', icon: '🤖' },
