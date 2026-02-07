@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <section id="projects" className="section" style={styles.section}>
             <div className="container">
-                <h2 style={styles.heading}>LATEST <span style={{ color: 'var(--accent-color)' }}>PROJECTS</span></h2>
+                <h2 className="section-heading">LATEST <span style={{ color: 'var(--accent-color)' }}>PROJECTS</span></h2>
                 <div style={styles.grid}>
                     {projectsData.map((project, index) => (
                         <div key={index} style={styles.card} onClick={() => window.open(project.link, '_blank')}>
@@ -69,12 +69,7 @@ const styles = {
         background: 'transparent',
     },
     heading: {
-        textAlign: 'center',
-        fontSize: '3rem',
-        marginBottom: '4rem',
-        color: '#fff',
-        textTransform: 'uppercase',
-        letterSpacing: '2px',
+        // Moved to index.css .section-heading
     },
     grid: {
         display: 'grid',

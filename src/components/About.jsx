@@ -6,7 +6,7 @@ const About = () => {
         <section id="about" className="section" style={styles.section}>
             <div className="container" style={styles.container}>
                 <div style={styles.card}>
-                    <h2 style={styles.heading}>ABOUT <span style={{ color: 'var(--secondary-color)' }}>ME</span></h2>
+                    <h2 className="section-heading" style={{ marginBottom: '1rem' }}>ABOUT <span style={{ color: 'var(--secondary-color)' }}>ME</span></h2>
                     <div style={styles.divider}></div>
                     <p style={styles.paragraph}>
                         I recently graduated with a <strong>Bachelor of Science in Computer Systems Engineering</strong> from Riga Technical University and ISMA University.
@@ -59,12 +59,7 @@ const styles = {
         backdropFilter: 'blur(10px)',
     },
     heading: {
-        fontSize: '3rem',
-        textAlign: 'center',
-        marginBottom: '1rem',
-        color: '#fff',
-        textTransform: 'uppercase',
-        letterSpacing: '2px',
+        // Moved to index.css .section-heading
     },
     divider: {
         width: '60px',
