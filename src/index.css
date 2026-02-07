@@ -362,22 +362,38 @@ h3 {
     border-radius: 12px !important;
   }
 
-  /* Skills Specifics */
+  /* Skills Specifics - MINIMALIST MODE */
   .skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 110px;
-    /* Reduced uniform height */
+    min-height: auto !important;
+    /* Remove fixed height */
+    padding: 0.8rem 0.5rem !important;
+    aspect-ratio: auto !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    /* Flat background */
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transform: none !important;
+    /* Disable animations */
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  .skill-card:hover {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.03) !important;
   }
 
   .skill-card .icon-wrapper {
-    width: 32px !important;
-    height: 32px !important;
-    margin-bottom: 0.4rem !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: 0.3rem !important;
     border-width: 1px !important;
+    box-shadow: none !important;
+    /* Remove glow for performance/clean layout */
   }
 
   .skill-card .icon-wrapper span {
@@ -386,18 +402,10 @@ h3 {
 
   .skill-card h3 {
     font-size: 0.8rem !important;
-    margin-bottom: 0.2rem !important;
+    margin-bottom: 0.1rem !important;
   }
 
-  .skill-card p {
-    font-size: 0.65rem !important;
-    align-self: center !important;
-    /* Center the level text */
-    margin-top: 0.2rem !important;
-    opacity: 0.8;
-  }
-
-  /* Bar adjustments for mobile */
+  /* HIDE PROGRESS BAR to save space */
   .skill-card .bar-container {
     height: 4px !important;
     margin-bottom: 0.2rem !important;
