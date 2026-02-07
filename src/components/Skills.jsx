@@ -16,7 +16,7 @@ const Skills = () => {
             <div className="container">
                 <h2 className="section-heading">TECHNICAL <span style={{ color: 'var(--primary-color)' }}>SKILLS</span></h2>
 
-                <div style={styles.grid}>
+                <div className="skills-grid">
                     {skillsData.map((skill, index) => (
                         <div key={index} style={styles.card} className="skill-card">
                             <div style={styles.iconWrapper(skill.color)} className="icon-wrapper">
@@ -44,11 +44,7 @@ const styles = {
         // Moved to index.css .section-heading
     },
     grid: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(135px, 1fr))',
-        gap: '2rem',
-        maxWidth: '1000px',
-        margin: '0 auto',
+        // Moved to index.css .skills-grid
     },
     card: {
         background: 'rgba(255, 255, 255, 0.03)',

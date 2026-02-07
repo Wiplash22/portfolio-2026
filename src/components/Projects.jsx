@@ -33,7 +33,7 @@ const Projects = () => {
         <section id="projects" className="section" style={styles.section}>
             <div className="container">
                 <h2 className="section-heading">LATEST <span style={{ color: 'var(--accent-color)' }}>PROJECTS</span></h2>
-                <div style={styles.grid}>
+                <div className="projects-grid">
                     {projectsData.map((project, index) => (
                         <div key={index} style={styles.card} className="project-card" onClick={() => window.open(project.link, '_blank')}>
                             <div style={styles.content}>
@@ -72,9 +72,7 @@ const styles = {
         // Moved to index.css .section-heading
     },
     grid: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: '2rem',
+        // Moved to index.css .projects-grid
     },
     card: {
         background: 'linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)',

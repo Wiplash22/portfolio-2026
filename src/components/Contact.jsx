@@ -10,7 +10,7 @@ const Contact = () => {
                         Ready to start a project?
                     </p>
 
-                    <div style={styles.grid}>
+                    <div className="contact-grid">
                         <a href="mailto:antonyjporuthukkaran33290@gmail.com" style={styles.item}>
                             <span style={styles.label}>Email</span>
                             <span style={styles.value}>antonyjporuthukkaran33290@gmail.com</span>
@@ -66,12 +66,7 @@ const styles = {
         marginBottom: '3rem',
     },
     grid: {
-        display: 'grid',
-        gap: '1.5rem',
-        width: '100%',
-        maxWidth: '500px',
-        margin: '0 auto 3rem auto',
-        textAlign: 'left',
+        // Moved to index.css .contact-grid
     },
     item: {
         display: 'flex',
