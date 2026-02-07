@@ -14,7 +14,7 @@ const Skills = () => {
     return (
         <section id="skills" className="section" style={styles.section}>
             <div className="container">
-                <h2 style={styles.heading}>TECHNICAL <span style={{ color: 'var(--primary-color)' }}>SKILLS</span></h2>
+                <h2 className="section-heading">TECHNICAL <span style={{ color: 'var(--primary-color)' }}>SKILLS</span></h2>
 
                 <div style={styles.grid}>
                     {skillsData.map((skill, index) => (
@@ -41,13 +41,7 @@ const styles = {
         background: 'transparent',
     },
     heading: {
-        textAlign: 'center',
-        fontSize: '3rem',
-        marginBottom: '4rem',
-        color: '#fff',
-        textTransform: 'uppercase',
-        letterSpacing: '2px',
-        textShadow: '0 0 20px rgba(0, 243, 255, 0.3)',
+        // Moved to index.css .section-heading
     },
     grid: {
         display: 'grid',

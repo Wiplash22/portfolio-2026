@@ -152,6 +152,30 @@ h3 {
   letter-spacing: -0.02em;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
