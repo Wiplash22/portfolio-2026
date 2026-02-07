@@ -15,10 +15,10 @@ const Contact = () => {
                             <span style={styles.label}>Email</span>
                             <span style={styles.value}>antonyjporuthukkaran33290@gmail.com</span>
                         </a>
-                        <div style={styles.item}>
+                        <a href="tel:+917994045884" style={styles.item}>
                             <span style={styles.label}>Phone</span>
                             <span style={styles.value}>+91 799 404 5884</span>
-                        </div>
+                        </a>
                         <a href="https://linkedin.com/in/antony-jimson-poruthukkaran-0396bb198" target="_blank" rel="noopener noreferrer" style={styles.item}>
                             <span style={styles.label}>Social</span>
                             <span style={styles.value}>LinkedIn Profile &rarr;</span>
