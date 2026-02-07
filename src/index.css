@@ -239,9 +239,41 @@ h3 {
     grid-template-columns: 1fr !important;
   }
 
-  /* Contact Form Fixes */
-  #contact .metric-card {
-    width: 100%;
+  /* Fix cards on smaller screens */
+  .skill-card,
+  .project-card,
+  .contact-card {
+    width: 100% !important;
+    padding: 1.5rem !important;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  /* Force override padding from inline styles */
+  .contact-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* Reduce Skill Icon Size */
+  .skill-card .icon-wrapper {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  /* Target the icon inside the wrapper */
+  .skill-card .icon-wrapper span {
+    font-size: 1.5rem !important;
+  }
+
+  /* Target the Skill Name (Python, Django, etc) */
+  .skill-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Reduce heading size */
+  .section-heading {
+    font-size: 2rem !important;
+    margin-bottom: 2.5rem !important;
   }
 }
 
@@ -262,33 +294,18 @@ h3 {
     width: 100%;
   }
 
-  /* Fix cards on very small screens */
-  .skill-card,
-  .project-card,
-  .contact-card {
-    width: 100% !important;
-    padding: 1.5rem !important;
-    margin: 0 auto 1rem auto;
-  }
-
-  /* Force override padding from inline styles */
-  .contact-card {
-    padding: 2rem 1rem !important;
-  }
-
-  /* Reduce Skill Icon Size */
+  /* Even smaller for phones */
   .skill-card .icon-wrapper {
-    width: 45px !important;
-    height: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 
-  .skill-card span {
-    font-size: 1.4rem !important;
+  .skill-card h3 {
+    font-size: 0.9rem !important;
   }
 
-  /* Reduce heading size further */
   .section-heading {
-    font-size: 1.7rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 1.5rem !important;
   }
 }
