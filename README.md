@@ -1,16 +1,70 @@
-# React + Vite
+# 🚀 Portfolio Website - Antony Jimson Poruthukkaran
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This project showcases my skills, experience, and projects as a **Python & Django Developer**.
 
-Currently, two official plugins are available:
+![CleanShot 2025-02-07 at 15 48 46](https://img.shields.org/badge/Status-Live-success)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+-   **Modern Neon/Dark Aesthetics**: A futuristic design with glowing accents and glassmorphism cards.
+-   **Interactive Elements**:
+    -   Animated particle background mesh.
+    -   Custom hover effects for buttons and cards.
+    -   Smooth scrolling navigation.
+-   **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+-   **Dynamic Content**:
+    -   **Projects**: Links to live GitHub repositories with paper previews.
+    -   **Skills**: Visualized with a modern grid layout and progress indicators.
+    -   **Publications**: Highlighted academic work with direct download links.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+-   **Frontend**: React.js (Vite)
+-   **Styling**: Vanilla CSS (CSS Variables for theming)
+-   **Language**: JavaScript (ES6+)
+-   **Deployment**: Vercel / GitHub Pages / Netlify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+To run this project locally:
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Wiplash22/portfolio-2026.git
+    cd portfolio-2026
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/          # Images, PDFs, and media files
+├── components/      # Reusable React components (Hero, About, etc.)
+├── App.jsx          # Main application component
+├── index.css        # Global styles and responsive design
+└── main.jsx         # Entry point
+```
+
+## 📬 Contact
+
+Feel free to reach out!
+
+-   **LinkedIn**: [Antony Jimson Poruthukkaran](https://www.linkedin.com/in/antony-jimson-poruthukkaran-76121a164)
+-   **GitHub**: [Wiplash22](https://github.com/Wiplash22)
+-   **Email**: antonyjimson@gmail.com
+
+---
+
+Designed & Developed by **Antony Jimson Poruthukkaran** © 2026.
