@@ -53,6 +53,7 @@ const styles = {
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',
+        margin: '0 auto',
     },
     heading: {
         fontSize: '3rem',
@@ -67,6 +68,7 @@ const styles = {
     grid: {
         display: 'grid',
         gap: '1.5rem',
+        width: '100%',
         maxWidth: '500px',
         margin: '0 auto 3rem auto',
         textAlign: 'left',
