@@ -14,12 +14,7 @@ const projectsData = [
         tags: ['Python', 'Django', 'Web Development'],
         link: 'https://github.com/Wiplash22/Python_Django_project1'
     },
-    {
-        title: 'Python Django Project',
-        description: 'A full-stack web application built with Python and Django. Features robust backend logic and scalable architecture.',
-        tags: ['Python', 'Django', 'Web Development'],
-        link: 'https://github.com/Wiplash22/Python_Django_project1'
-    },
+
     {
         title: 'Streaming Platform',
         description: 'Online streaming platform for everyone. A software engineering project demonstrating full-stack capabilities.',
